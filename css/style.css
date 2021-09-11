@@ -36,3 +36,32 @@ main{
   font-size: 18px;
   color: #fff;
 }
+
+/* Form style */
+#survey-form{
+  background-color:#253031b2;
+  width: 750px;
+  margin: 0 auto 100px;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+form input, select {
+  outline: 1;
+  border: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 8px;
+}
+
+#name, #email, #number, #dropdown, #favorite, #comment, #submit{
+  display: block;
+  width: 100%;
+}
+
+.inputs{
+  margin-top: 20px;
+}
+
+
