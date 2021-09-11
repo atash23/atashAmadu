@@ -9,17 +9,18 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   background-image: linear-gradient(
-      rgba(14, 135, 156, 0.602),
-      rgba(22, 138, 167, 0.431)
+      rgba(14, 135, 156, 0.712),
+      rgba(22, 138, 167, 0.609)
     ),
     url("../images/developers.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Main Styles */
-main{
+main {
   color: #fff;
 }
 #title-desc {
@@ -38,15 +39,16 @@ main{
 }
 
 /* Form style */
-#survey-form{
-  background-color:#253031b2;
+#survey-form {
+  background-color: #253031b2;
   width: 750px;
   margin: 0 auto 100px;
   padding: 40px;
   border-radius: 5px;
 }
 
-form input, select {
+form input,
+select {
   outline: 1;
   border: 0;
   padding: 15px;
@@ -55,13 +57,67 @@ form input, select {
   border-radius: 8px;
 }
 
-#name, #email, #number, #dropdown, #favorite, #comment, #submit{
+#name,
+#email,
+#number,
+#dropdown,
+#favorite,
+#comment,
+#submit {
   display: block;
   width: 100%;
 }
 
-.inputs{
+.inputs {
   margin-top: 20px;
 }
 
+#definetely,
+#maybe,
+#notsure {
+  display: inline;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
 
+label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.radio-labels {
+  display: inline;
+}
+
+/* Checkboxes Buttons */
+.checkboxes input,
+.checkboxes label {
+  display: inline;
+  margin-top: 20px;
+}
+.checkboxes input {
+  margin-right: 10px;
+}
+
+.textarea {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  margin-top: 0px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  background-color: #37af65;
+  color: #fff;
+  border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  #survey-form {
+    width: 80%;
+  }
+}
